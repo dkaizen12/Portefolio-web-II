@@ -1,385 +1,664 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Illian — Portfolio Commercial</title>
-  <meta name="description" content="Portfolio professionnel de Christophe Vallot, commercial disponible pour des missions." />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dady — Portfolio Commercial</title>
+    <meta
+      name="description"
+      content="Portfolio professionnel de Dady, freelance disponible pour des missions."
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <script src="scripts/navbar.js" defer></script>
-  <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main-content">Accéder au contenu principal</a>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main-content">Accéder au contenu principal</a>
 
-  <!-- HEADER -->
-  <header id="header" role="banner">
-    <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
-      <span class="logo-dot" aria-hidden="true"></span>
-      Christophe Vallot
-    </a>
+    <!-- HEADER -->
+    <header id="header" role="banner">
+      <a class="logo" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="logo-dot" aria-hidden="true"></span>
+        Dady Kalangoso
+      </a>
 
-    <nav id="nav" role="navigation" aria-label="Navigation principale">
-      <a href="#edito">Edito</a>
-      <a href="#a-propos">À propos</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
-      <div class="nav-controls">
-        <button class="btn-theme" id="theme-toggle" aria-label="Changer de thème">
-          <i class="fa-solid fa-moon" id="theme-icon"></i>
-        </button>
-      </div>
-    </nav>
-
-    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <!-- MAIN -->
-  <main id="main-content">
-
-    <!-- HERO -->
-    <section id="accueil" aria-label="Présentation">
-      <div class="profile-wrapper">
-        <div class="profile-ring" aria-hidden="true"></div>
-        <div class="profile-img-placeholder" role="img" aria-label="Photo de profil de Christophe Vallot">
-          👤
-        </div>
-      </div>
-
-      <h1 class="hero-name">
-        <span id="typing-text"></span><span class="typing-cursor" aria-hidden="true"></span>
-      </h1>
-
-      <p class="hero-tagline">Commercial passionné · Spécialiste en développement de portefeuille client et négociation B2B</p>
-
-      <div class="hero-stats" aria-label="Chiffres clés">
-        <div class="stat">
-          <div class="stat-num" data-target="8" aria-label="8 ans d'expérience">0</div>
-          <div class="stat-label">Années d'exp.</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num" data-target="120" aria-label="120 clients">0</div>
-          <div class="stat-label">Clients</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num" data-target="6" aria-label="6 projets">0</div>
-          <div class="stat-label">Projets</div>
-        </div>
-      </div>
-
-      <div class="hero-cta">
-        <a href="#projets" class="btn-primary"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Voir mes projets</a>
-        <a href="#contact" class="btn-outline"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Me contacter</a>
-      </div>
-
-      <div class="scroll-indicator" aria-hidden="true">
-        <div class="scroll-line"></div>
-        <span>scroll</span>
-      </div>
-    </section>
-
-    <!-- EDITO / CARROUSEL -->
-    <section id="edito" aria-label="Édito">
-      <div class="edito-inner">
-        <p class="section-label reveal">Édito</p>
-        <h2 class="section-title reveal reveal-delay-1">Ce qui me définit</h2>
-
-        <div class="carousel reveal reveal-delay-2" id="carousel" aria-live="polite" aria-label="Carrousel de citations">
-          <div class="carousel-slide active" role="group" aria-roledescription="slide" aria-label="Slide 1 sur 3">
-            <blockquote>« La vente, c'est avant tout écouter. Le reste, c'est de la technique. »</blockquote>
-            <p>Depuis plus de 8 ans, j'accompagne des entreprises de toutes tailles dans le développement de leur chiffre d'affaires. Ma méthode : comprendre en profondeur les besoins clients pour proposer des solutions sur mesure et créer des relations durables.</p>
-          </div>
-          <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 sur 3">
-            <blockquote>« Chaque objection est une opportunité déguisée. »</blockquote>
-            <p>Expert en négociation complexe et en gestion de cycles de vente longs, j'interviens aussi bien en prospection qu'en fidélisation, avec un taux de transformation au-dessus des moyennes du secteur.</p>
-          </div>
-          <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 sur 3">
-            <blockquote>« Un bon commercial est un architecte de confiance. »</blockquote>
-            <p>Disponible pour des missions de conseil, d'audit commercial ou d'accompagnement terrain. Mon objectif : booster vos résultats de manière pérenne et mesurable.</p>
-          </div>
-        </div>
-
-        <div class="carousel-controls reveal reveal-delay-3">
-          <button class="carousel-btn" id="prev-btn" aria-label="Slide précédent">
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          </button>
-          <div class="carousel-dots" role="tablist" aria-label="Navigation du carrousel">
-            <button class="dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-index="0"></button>
-            <button class="dot" role="tab" aria-selected="false" aria-label="Slide 2" data-index="1"></button>
-            <button class="dot" role="tab" aria-selected="false" aria-label="Slide 3" data-index="2"></button>
-          </div>
-          <button class="carousel-btn" id="next-btn" aria-label="Slide suivant">
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      <nav id="nav" role="navigation" aria-label="Navigation principale">
+        <a href="#edito">Edito</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+        <div class="nav-controls">
+          <button
+            class="btn-theme"
+            id="theme-toggle"
+            aria-label="Changer de thème"
+          >
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
           </button>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <!-- À PROPOS -->
-    <section id="a-propos" aria-label="À propos">
-      <div class="about-grid">
-        <div class="about-visual reveal">
-          <div class="about-img-box" role="img" aria-label="Illustration professionnelle">
-            💼
-          </div>
-          <div class="about-badge" aria-label="Disponible immédiatement">
-            <strong>Dispo</strong>
-            Immédiatement
-          </div>
-        </div>
-        <div class="about-content">
-          <p class="section-label reveal reveal-delay-1">À propos</p>
-          <h2 class="section-title reveal reveal-delay-2">Qui suis-je ?</h2>
-          <p class="reveal reveal-delay-3">Commercial B2B depuis 8 ans, j'ai évolué dans des environnements exigeants — grands comptes, startups en croissance et PME ambitieuses. Ma force ? Transformer des prospects froids en partenaires durables.</p>
-          <p class="reveal reveal-delay-4">Passionné par la stratégie commerciale et le développement de business, je suis certifié en négociation avancée et formé aux méthodologies SPIN Selling et MEDDIC.</p>
-          <div class="skills-list reveal reveal-delay-5" aria-label="Compétences clés">
-            <span class="skill-chip">Négociation B2B</span>
-            <span class="skill-chip">CRM Salesforce</span>
-            <span class="skill-chip">Prospection</span>
-            <span class="skill-chip">Account Management</span>
-            <span class="skill-chip">SPIN Selling</span>
-            <span class="skill-chip">LinkedIn Sales Nav.</span>
-            <span class="skill-chip">Appels d'offres</span>
-            <span class="skill-chip">KPI & Reporting</span>
-          </div>
-        </div>
-      </div>
-    </section>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
 
-    <!-- PROJETS -->
-    <section id="projets" aria-label="Projets">
-      <p class="section-label reveal" style="text-align:center">Portfolio</p>
-      <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Mes projets</h2>
-
-      <div class="projets-grid" role="list">
-
-        <article class="flip-card reveal reveal-delay-1" role="listitem" aria-label="Projet 1">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <div class="flip-front-img" aria-hidden="true">🚀</div>
-              <div class="flip-front-body">
-                <h3>Expansion Région Sud</h3>
-                <span>Développement territorial</span>
-              </div>
-            </div>
-            <div class="flip-back">
-              <div>
-                <h3>Expansion Région Sud</h3>
-                <p>Ouverture de 35 nouveaux comptes sur la région PACA en 18 mois, générant +€1.2M de CA additionnel.</p>
-              </div>
-              <div class="flip-back-tags">
-                <span class="tag">Prospection</span><span class="tag">B2B</span><span class="tag">Terrain</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="flip-card reveal reveal-delay-2" role="listitem" aria-label="Projet 2">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <div class="flip-front-img" aria-hidden="true">🤝</div>
-              <div class="flip-front-body">
-                <h3>Fidélisation Grands Comptes</h3>
-                <span>Account Management</span>
-              </div>
-            </div>
-            <div class="flip-back">
-              <div>
-                <h3>Fidélisation Grands Comptes</h3>
-                <p>Réduction du churn de 40% sur un portefeuille de 25 grands comptes grâce à un programme de suivi personnalisé.</p>
-              </div>
-              <div class="flip-back-tags">
-                <span class="tag">CRM</span><span class="tag">Fidélisation</span><span class="tag">Grands comptes</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="flip-card reveal reveal-delay-3" role="listitem" aria-label="Projet 3">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <div class="flip-front-img" aria-hidden="true">📊</div>
-              <div class="flip-front-body">
-                <h3>Refonte Process Commercial</h3>
-                <span>Stratégie & process</span>
-              </div>
-            </div>
-            <div class="flip-back">
-              <div>
-                <h3>Refonte Process Commercial</h3>
-                <p>Mise en place d'un pipeline structuré (MEDDIC) réduisant le cycle de vente moyen de 45 à 28 jours.</p>
-              </div>
-              <div class="flip-back-tags">
-                <span class="tag">MEDDIC</span><span class="tag">Pipeline</span><span class="tag">Formation</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="flip-card reveal reveal-delay-4" role="listitem" aria-label="Projet 4">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <div class="flip-front-img" aria-hidden="true">🌍</div>
-              <div class="flip-front-body">
-                <h3>Internationalisation</h3>
-                <span>Développement export</span>
-              </div>
-            </div>
-            <div class="flip-back">
-              <div>
-                <h3>Internationalisation</h3>
-                <p>Ouverture de marchés en Belgique et en Suisse, représentant 15% du CA de l'entreprise en 2 ans.</p>
-              </div>
-              <div class="flip-back-tags">
-                <span class="tag">Export</span><span class="tag">Négociation</span><span class="tag">Veille marché</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="flip-card reveal reveal-delay-5" role="listitem" aria-label="Projet 5">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <div class="flip-front-img" aria-hidden="true">🎯</div>
-              <div class="flip-front-body">
-                <h3>Appel d'offres Public</h3>
-                <span>Marchés publics</span>
-              </div>
-            </div>
-            <div class="flip-back">
-              <div>
-                <h3>Appel d'offres Public</h3>
-                <p>Pilotage et remise de 3 dossiers d'appels d'offres publics, dont 2 remportés pour un total de €2.8M.</p>
-              </div>
-              <div class="flip-back-tags">
-                <span class="tag">Marchés publics</span><span class="tag">Rédaction</span><span class="tag">PME</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="flip-card reveal reveal-delay-6" role="listitem" aria-label="Projet 6">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <div class="flip-front-img" aria-hidden="true">💡</div>
-              <div class="flip-front-body">
-                <h3>Formation Équipe</h3>
-                <span>Management & coaching</span>
-              </div>
-            </div>
-            <div class="flip-back">
-              <div>
-                <h3>Formation Équipe</h3>
-                <p>Coaching d'une équipe de 6 commerciaux juniors avec +30% de performance collective en 6 mois.</p>
-              </div>
-              <div class="flip-back-tags">
-                <span class="tag">Coaching</span><span class="tag">Management</span><span class="tag">KPI</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" aria-label="Contact">
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <p class="section-label">Contact</p>
-          <h2>Travaillons ensemble</h2>
-          <p>Vous avez une mission, un projet ou simplement envie d'échanger ? N'hésitez pas à me contacter, je réponds sous 48h.</p>
-          <div class="contact-detail">
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-            <span>christophe.vallot@email.com</span>
-          </div>
-          <div class="contact-detail">
-            <i class="fa-solid fa-phone" aria-hidden="true"></i>
-            <span>+33 6 12 34 56 78</span>
-          </div>
-          <div class="contact-detail">
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-            <span>Paris, Île-de-France</span>
+    <!-- MAIN -->
+    <main id="main-content">
+      <!-- HERO -->
+      <section id="accueil" aria-label="Présentation">
+        <div class="profile-wrapper">
+          <div class="profile-ring" aria-hidden="true"></div>
+          <div
+            class="profile-img-placeholder"
+            role="img"
+            aria-label="Photo de profil de Dady Kalangoso"
+          >
+            👤
           </div>
         </div>
 
-        <div class="reveal reveal-delay-2">
-          <form class="contact-form" id="contact-form" novalidate aria-label="Formulaire de contact">
+        <h1 class="hero-name">
+          <span id="typing-text"></span
+          ><span class="typing-cursor" aria-hidden="true"></span>
+        </h1>
 
-            <div class="form-group">
-              <label for="prenom">Prénom *</label>
-              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" required aria-required="true" />
-              <span class="error-msg" role="alert" id="prenom-error">Veuillez saisir votre prénom.</span>
+        <!-- Sélecteur de profil -->
+        <div class="hero-profile-switcher">
+          <label for="profil-selector">Profil :</label>
+          <select id="profil-selector">
+            <option value="product-owner">Product Owner</option>
+            <option value="webmaster">Webmaster Junior</option>
+            <option value="dev-python">Dev Python Junior</option>
+            <option value="dev-web">Développeur Web</option>
+            <option value="data-analyst">Data Analyst</option>
+            <option value="business-analyst">Business Analyst Junior</option>
+            <option value="assistant-admin">Assistant Administratif</option>
+            <option value="assistant-gestion">Assistant de Gestion</option>
+            <option value="conducteur-travaux">Conducteur de Travaux</option>
+            <option value="chef-projet">
+              Assistant Chef de Projet Digital
+            </option>
+            <option value="support-it">Support IT</option>
+            <option value="qa">Testeur QA</option>
+          </select>
+        </div>
+
+        <p class="hero-tagline" id="hero-tagline">
+          Commercial passionné · Spécialiste en développement de portefeuille
+          client et négociation B2B
+        </p>
+
+        <div class="hero-stats" aria-label="Chiffres clés">
+          <div class="stat">
+            <div
+              class="stat-num"
+              data-target="8"
+              aria-label="8 ans d'expérience"
+            >
+              0
             </div>
-
-            <div class="form-group">
-              <label for="nom">Nom *</label>
-              <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required aria-required="true" />
-              <span class="error-msg" role="alert" id="nom-error">Veuillez saisir votre nom.</span>
+            <div class="stat-label">Années d'exp.</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="120" aria-label="120 clients">
+              0
             </div>
+            <div class="stat-label">Clients</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="6" aria-label="6 projets">0</div>
+            <div class="stat-label">Projets</div>
+          </div>
+        </div>
 
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" placeholder="votre@email.com" autocomplete="email" required aria-required="true" />
-              <span class="error-msg" role="alert" id="email-error">Veuillez saisir un email valide.</span>
+        <div class="hero-cta">
+          <a href="#projets" class="btn-primary"
+            ><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Voir mes
+            projets</a
+          >
+          <a href="#contact" class="btn-outline"
+            ><i class="fa-solid fa-envelope" aria-hidden="true"></i> Me
+            contacter</a
+          >
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <div class="scroll-line"></div>
+          <span>scroll</span>
+        </div>
+      </section>
+
+      <!-- EDITO / CARROUSEL -->
+      <section id="edito" aria-label="Édito">
+        <div class="edito-inner">
+          <p class="section-label reveal">Édito</p>
+          <h2 class="section-title reveal reveal-delay-1">Ce qui me définit</h2>
+
+          <div
+            class="carousel reveal reveal-delay-2"
+            id="carousel"
+            aria-live="polite"
+            aria-label="Carrousel de citations"
+          >
+            <div
+              class="carousel-slide active"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Slide 1 sur 3"
+            >
+              <blockquote>
+                « La vente, c'est avant tout écouter. Le reste, c'est de la
+                technique. »
+              </blockquote>
+              <p>
+                Depuis plus de 8 ans, j'accompagne des entreprises de toutes
+                tailles dans le développement de leur chiffre d'affaires. Ma
+                méthode : comprendre en profondeur les besoins clients pour
+                proposer des solutions sur mesure et créer des relations
+                durables.
+              </p>
             </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre mission..." required aria-required="true" aria-describedby="message-count"></textarea>
-              <span class="error-msg" role="alert" id="message-error">Le message doit contenir au moins 20 caractères.</span>
+            <div
+              class="carousel-slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Slide 2 sur 3"
+            >
+              <blockquote>
+                « Chaque objection est une opportunité déguisée. »
+              </blockquote>
+              <p>
+                Expert en négociation complexe et en gestion de cycles de vente
+                longs, j'interviens aussi bien en prospection qu'en
+                fidélisation, avec un taux de transformation au-dessus des
+                moyennes du secteur.
+              </p>
             </div>
+            <div
+              class="carousel-slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="Slide 3 sur 3"
+            >
+              <blockquote>
+                « Un bon commercial est un architecte de confiance. »
+              </blockquote>
+              <p>
+                Disponible pour des missions de conseil, d'audit commercial ou
+                d'accompagnement terrain. Mon objectif : booster vos résultats
+                de manière pérenne et mesurable.
+              </p>
+            </div>
+          </div>
 
-            <p class="rgpd-notice">
-              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-              Vos données sont utilisées uniquement pour répondre à votre demande, conformément au <abbr title="Règlement Général sur la Protection des Données">RGPD</abbr>. Aucun transfert à des tiers.
-            </p>
-
-            <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
-              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Envoyer le message
+          <div class="carousel-controls reveal reveal-delay-3">
+            <button
+              class="carousel-btn"
+              id="prev-btn"
+              aria-label="Slide précédent"
+            >
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
             </button>
-
-            <div class="form-success" id="form-success" role="status" aria-live="polite">
-              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-              Message envoyé avec succès ! Je vous répondrai sous 48h.
+            <div
+              class="carousel-dots"
+              role="tablist"
+              aria-label="Navigation du carrousel"
+            >
+              <button
+                class="dot active"
+                role="tab"
+                aria-selected="true"
+                aria-label="Slide 1"
+                data-index="0"
+              ></button>
+              <button
+                class="dot"
+                role="tab"
+                aria-selected="false"
+                aria-label="Slide 2"
+                data-index="1"
+              ></button>
+              <button
+                class="dot"
+                role="tab"
+                aria-selected="false"
+                aria-label="Slide 3"
+                data-index="2"
+              ></button>
             </div>
-          </form>
+            <button
+              class="carousel-btn"
+              id="next-btn"
+              aria-label="Slide suivant"
+            >
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <!-- À PROPOS -->
+      <section id="a-propos" aria-label="À propos">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div
+              class="about-img-box"
+              role="img"
+              aria-label="Illustration professionnelle"
+            >
+              💼
+            </div>
+            <div class="about-badge" aria-label="Disponible immédiatement">
+              <strong>Dispo</strong>
+              Immédiatement
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="section-label reveal reveal-delay-1">À propos</p>
+            <h2 class="section-title reveal reveal-delay-2">Qui suis-je ?</h2>
+            <p class="reveal reveal-delay-3">
+              Commercial B2B depuis 8 ans, j'ai évolué dans des environnements
+              exigeants — grands comptes, startups en croissance et PME
+              ambitieuses. Ma force ? Transformer des prospects froids en
+              partenaires durables.
+            </p>
+            <p class="reveal reveal-delay-4">
+              Passionné par la stratégie commerciale et le développement de
+              business, je suis certifié en négociation avancée et formé aux
+              méthodologies SPIN Selling et MEDDIC.
+            </p>
+            <div
+              class="skills-list reveal reveal-delay-5"
+              aria-label="Compétences clés"
+            >
+              <span class="skill-chip">Négociation B2B</span>
+              <span class="skill-chip">CRM Salesforce</span>
+              <span class="skill-chip">Prospection</span>
+              <span class="skill-chip">Account Management</span>
+              <span class="skill-chip">SPIN Selling</span>
+              <span class="skill-chip">LinkedIn Sales Nav.</span>
+              <span class="skill-chip">Appels d'offres</span>
+              <span class="skill-chip">KPI & Reporting</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- FOOTER -->
-  <footer role="contentinfo">
-    <p class="footer-name">Christophe Vallot</p>
-    <nav class="social-links" aria-label="Réseaux sociaux">
-      <a href="https://linkedin.com" class="social-link linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (nouvelle fenêtre)">
-        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-      </a>
-      <a href="https://twitter.com" class="social-link twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X (nouvelle fenêtre)">
-        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com" class="social-link github" target="_blank" rel="noopener noreferrer" aria-label="GitHub (nouvelle fenêtre)">
-        <i class="fa-brands fa-github" aria-hidden="true"></i>
-      </a>
-    </nav>
-    <p class="footer-copy">© <span id="year"></span> Christophe Vallot · Tous droits réservés</p>
-  </footer>
+      <!-- PROJETS -->
+      <section id="projets" aria-label="Projets">
+        <p class="section-label reveal" style="text-align: center">Portfolio</p>
+        <h2
+          class="section-title reveal reveal-delay-1"
+          style="text-align: center"
+        >
+          Mes projets
+        </h2>
 
-  <!-- BACK TO TOP -->
-  <button id="back-to-top" aria-label="Revenir en haut de la page" title="Retour en haut">
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-  </button>
-</body>
+        <div class="projets-grid" role="list">
+          <article
+            class="flip-card reveal reveal-delay-1"
+            role="listitem"
+            aria-label="Projet 1"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="flip-front-img" aria-hidden="true">🚀</div>
+                <div class="flip-front-body">
+                  <h3>Expansion Région Sud</h3>
+                  <span>Développement territorial</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <div>
+                  <h3>Expansion Région Sud</h3>
+                  <p>
+                    Ouverture de 35 nouveaux comptes sur la région PACA en 18
+                    mois, générant +€1.2M de CA additionnel.
+                  </p>
+                </div>
+                <div class="flip-back-tags">
+                  <span class="tag">Prospection</span
+                  ><span class="tag">B2B</span><span class="tag">Terrain</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flip-card reveal reveal-delay-2"
+            role="listitem"
+            aria-label="Projet 2"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="flip-front-img" aria-hidden="true">🤝</div>
+                <div class="flip-front-body">
+                  <h3>Fidélisation Grands Comptes</h3>
+                  <span>Account Management</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <div>
+                  <h3>Fidélisation Grands Comptes</h3>
+                  <p>
+                    Réduction du churn de 40% sur un portefeuille de 25 grands
+                    comptes grâce à un programme de suivi personnalisé.
+                  </p>
+                </div>
+                <div class="flip-back-tags">
+                  <span class="tag">CRM</span
+                  ><span class="tag">Fidélisation</span
+                  ><span class="tag">Grands comptes</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flip-card reveal reveal-delay-3"
+            role="listitem"
+            aria-label="Projet 3"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="flip-front-img" aria-hidden="true">📊</div>
+                <div class="flip-front-body">
+                  <h3>Refonte Process Commercial</h3>
+                  <span>Stratégie & process</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <div>
+                  <h3>Refonte Process Commercial</h3>
+                  <p>
+                    Mise en place d'un pipeline structuré (MEDDIC) réduisant le
+                    cycle de vente moyen de 45 à 28 jours.
+                  </p>
+                </div>
+                <div class="flip-back-tags">
+                  <span class="tag">MEDDIC</span
+                  ><span class="tag">Pipeline</span
+                  ><span class="tag">Formation</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flip-card reveal reveal-delay-4"
+            role="listitem"
+            aria-label="Projet 4"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="flip-front-img" aria-hidden="true">🌍</div>
+                <div class="flip-front-body">
+                  <h3>Internationalisation</h3>
+                  <span>Développement export</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <div>
+                  <h3>Internationalisation</h3>
+                  <p>
+                    Ouverture de marchés en Belgique et en Suisse, représentant
+                    15% du CA de l'entreprise en 2 ans.
+                  </p>
+                </div>
+                <div class="flip-back-tags">
+                  <span class="tag">Export</span
+                  ><span class="tag">Négociation</span
+                  ><span class="tag">Veille marché</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flip-card reveal reveal-delay-5"
+            role="listitem"
+            aria-label="Projet 5"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="flip-front-img" aria-hidden="true">🎯</div>
+                <div class="flip-front-body">
+                  <h3>Appel d'offres Public</h3>
+                  <span>Marchés publics</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <div>
+                  <h3>Appel d'offres Public</h3>
+                  <p>
+                    Pilotage et remise de 3 dossiers d'appels d'offres publics,
+                    dont 2 remportés pour un total de €2.8M.
+                  </p>
+                </div>
+                <div class="flip-back-tags">
+                  <span class="tag">Marchés publics</span
+                  ><span class="tag">Rédaction</span
+                  ><span class="tag">PME</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="flip-card reveal reveal-delay-6"
+            role="listitem"
+            aria-label="Projet 6"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <div class="flip-front-img" aria-hidden="true">💡</div>
+                <div class="flip-front-body">
+                  <h3>Formation Équipe</h3>
+                  <span>Management & coaching</span>
+                </div>
+              </div>
+              <div class="flip-back">
+                <div>
+                  <h3>Formation Équipe</h3>
+                  <p>
+                    Coaching d'une équipe de 6 commerciaux juniors avec +30% de
+                    performance collective en 6 mois.
+                  </p>
+                </div>
+                <div class="flip-back-tags">
+                  <span class="tag">Coaching</span
+                  ><span class="tag">Management</span
+                  ><span class="tag">KPI</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-label="Contact">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="section-label">Contact</p>
+            <h2>Travaillons ensemble</h2>
+            <p>
+              Vous avez une mission, un projet ou simplement envie d'échanger ?
+              N'hésitez pas à me contacter, je réponds sous 48h.
+            </p>
+            <div class="contact-detail">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span id="contact-email">dady.kalangosokangela@epfedu.fr</span>
+            </div>
+            <div class="contact-detail">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span id="contact-phone">06 95 12 84 43</span>
+            </div>
+            <div class="contact-detail">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span id="contact-location">Dampmart, Île-de-France</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-2">
+            <form
+              class="contact-form"
+              id="contact-form"
+              novalidate
+              aria-label="Formulaire de contact"
+            >
+              <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  placeholder="Votre prénom"
+                  autocomplete="given-name"
+                  required
+                  aria-required="true"
+                />
+                <span class="error-msg" role="alert" id="prenom-error"
+                  >Veuillez saisir votre prénom.</span
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Votre nom"
+                  autocomplete="family-name"
+                  required
+                  aria-required="true"
+                />
+                <span class="error-msg" role="alert" id="nom-error"
+                  >Veuillez saisir votre nom.</span
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="votre@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                />
+                <span class="error-msg" role="alert" id="email-error"
+                  >Veuillez saisir un email valide.</span
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Décrivez votre projet ou votre mission..."
+                  required
+                  aria-required="true"
+                  aria-describedby="message-count"
+                ></textarea>
+                <span class="error-msg" role="alert" id="message-error"
+                  >Le message doit contenir au moins 20 caractères.</span
+                >
+              </div>
+
+              <p class="rgpd-notice">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                Vos données sont utilisées uniquement pour répondre à votre
+                demande, conformément au
+                <abbr title="Règlement Général sur la Protection des Données"
+                  >RGPD</abbr
+                >. Aucun transfert à des tiers.
+              </p>
+
+              <button
+                type="submit"
+                class="btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                Envoyer le message
+              </button>
+
+              <div
+                class="form-success"
+                id="form-success"
+                role="status"
+                aria-live="polite"
+              >
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                Message envoyé avec succès ! Je vous répondrai sous 48h.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo">
+      <p class="footer-name">Dady Kalangoso</p>
+      <nav class="social-links" aria-label="Réseaux sociaux">
+        <a
+          href="https://www.linkedin.com/in/kalangosod/"
+          class="social-link linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn (nouvelle fenêtre)"
+        >
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://github.com/dkaizen12"
+          class="social-link github"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub (nouvelle fenêtre)"
+        >
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+      </nav>
+      <p class="footer-copy">
+        © <span id="year"></span> Dady Kalangoso · Tous droits réservés
+      </p>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button
+      id="back-to-top"
+      aria-label="Revenir en haut de la page"
+      title="Retour en haut"
+    >
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script src="js/script.js"></script>
+  </body>
 </html>

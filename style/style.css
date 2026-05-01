@@ -27,6 +27,7 @@
       --header-text: #f0ebe4;
       --card-bg: #1e1a16;
       --shadow: 0 4px 32px rgba(0,0,0,0.40);
+      --input-border: rgba(255,255,255,0.18);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -245,6 +246,7 @@
       background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent)) border-box;
       -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: destination-out;
+      mask:inherit;
       mask-composite: exclude;
       animation: spin-ring 12s linear infinite;
     }
@@ -419,6 +421,56 @@
       50% { transform: scaleY(1); transform-origin: top; }
       51% { transform: scaleY(1); transform-origin: bottom; }
       100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ===========================
+       PROFILE SWITCHER
+    =========================== */
+    .hero-profile-switcher {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      animation: fadeInUp 0.9s 0.35s ease both;
+    }
+
+    .hero-profile-switcher label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    #profil-selector {
+      appearance: none;
+      -webkit-appearance: none;
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1.5px solid var(--input-border, rgba(0,0,0,0.12));
+      border-radius: 30px;
+      padding: 8px 36px 8px 16px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      outline: none;
+      transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23c8502a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    #profil-selector:hover,
+    #profil-selector:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(200,80,42,0.12);
+    }
+
+    [data-theme="dark"] #profil-selector {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23e8724a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
     }
 
     /* ===========================
@@ -794,7 +846,7 @@
     .form-group textarea {
       width: 100%;
       background: var(--card-bg);
-      border: 1.5px solid transparent;
+      border: 1.5px solid var(--input-border, rgba(0,0,0,0.12));
       border-radius: 10px;
       padding: 13px 16px;
       font-family: 'DM Sans', sans-serif;
