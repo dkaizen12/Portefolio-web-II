@@ -483,7 +483,7 @@
     .section-label {
       font-size: 0.72rem;
       letter-spacing: 3px;
-      text-transform: uppercase;
+      text-transform: lowercase;
       color: var(--accent);
       margin-bottom: 12px;
       font-weight: 500;

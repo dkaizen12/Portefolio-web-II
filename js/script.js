@@ -2,7 +2,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     /* ---- TYPING EFFECT ---- */
-    const fullName = 'Christophe Vallot';
+    const fullName = 'Dady Kalangoso';
     const typingEl = document.getElementById('typing-text');
     let i = 0;
     function typeChar() {
