@@ -179,6 +179,47 @@
 // --- PROFILS MULTI-CV ---
 
 const profils = {
+  "dev-web": {
+    hero: "HTML · CSS · JavaScript · Intégration Figma · Responsive & UX Front‑End",
+    about: [
+      "Étudiant en Bachelor Data Science & Management à l’EPF Cachan, je développe des interfaces web en HTML, CSS et JavaScript.",
+      "Je souhaite contribuer à vos projets en développant des interfaces claires, performantes et adaptées aux besoins utilisateurs."
+    ],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive",
+      "Figma → Web",
+      "WordPress",
+      "Git / GitHub",
+      "VS Code"
+    ],
+    projects: [
+      {
+        emoji: "🌐",
+        title: "Portfolio web personnel",
+        subtitle: "Front-end",
+        description: "Développement complet d’un site responsive présentant mes projets.",
+        tags: ["HTML", "CSS", "JS"]
+      },
+      {
+        emoji: "📱",
+        title: "Intégration maquette Figma",
+        subtitle: "UI/UX",
+        description: "Reproduction fidèle d’une maquette Figma en HTML/CSS responsive.",
+        tags: ["Figma", "Intégration", "Responsive"]
+      },
+      {
+        emoji: "📊",
+        title: "Générateur de rapports",
+        subtitle: "Python + Web",
+        description: "Transformation de données Excel en PDF avec graphiques automatisés.",
+        tags: ["Python", "Automatisation", "Reporting"]
+      }
+    ]
+  },
+  
   "product-owner": {
     hero: "Gestion de produit · User Stories · Backlog · MVP · Vision orientée valeur",
     about: [
@@ -302,46 +343,6 @@ const profils = {
     ]
   },
 
-  "dev-web": {
-    hero: "HTML · CSS · JavaScript · Intégration Figma · Responsive & UX Front‑End",
-    about: [
-      "Étudiant en Bachelor Data Science & Management à l’EPF Cachan, je développe des interfaces web en HTML, CSS et JavaScript.",
-      "Je souhaite contribuer à vos projets en développant des interfaces claires, performantes et adaptées aux besoins utilisateurs."
-    ],
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive",
-      "Figma → Web",
-      "WordPress",
-      "Git / GitHub",
-      "VS Code"
-    ],
-    projects: [
-      {
-        emoji: "🌐",
-        title: "Portfolio web personnel",
-        subtitle: "Front-end",
-        description: "Développement complet d’un site responsive présentant mes projets.",
-        tags: ["HTML", "CSS", "JS"]
-      },
-      {
-        emoji: "📱",
-        title: "Intégration maquette Figma",
-        subtitle: "UI/UX",
-        description: "Reproduction fidèle d’une maquette Figma en HTML/CSS responsive.",
-        tags: ["Figma", "Intégration", "Responsive"]
-      },
-      {
-        emoji: "📊",
-        title: "Générateur de rapports",
-        subtitle: "Python + Web",
-        description: "Transformation de données Excel en PDF avec graphiques automatisés.",
-        tags: ["Python", "Automatisation", "Reporting"]
-      }
-    ]
-  },
 
   "data-analyst": {
     hero: "Analyse de données · SQL · Power BI · KPI · Data Cleaning & Reporting",
