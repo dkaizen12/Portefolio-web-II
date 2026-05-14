@@ -483,7 +483,7 @@
     .section-label {
       font-size: 0.72rem;
       letter-spacing: 3px;
-      text-transform: lowercase;
+      text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 12px;
       font-weight: 500;
@@ -1093,6 +1093,38 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 20px;
+    }
+
+    /* Compétences par domaine */
+    .skills-domains {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .skills-domain-block {
+      background: var(--bg2);
+      border-radius: 12px;
+      padding: 16px 18px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    [data-theme="dark"] .skills-domain-block {
+      border-color: rgba(255,255,255,0.06);
+    }
+
+    .skills-domain-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      margin: 0 0 10px 0;
+    }
+
+    .skills-domain-block .skills-list {
+      margin-top: 0;
     }
 
     .skill-chip {
