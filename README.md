@@ -3,10 +3,8 @@
 Portfolio personnel multi-profil développé en HTML/CSS/JS. Pensé pour s'adapter dynamiquement à différents postes cibles sans changer de page.
 
 ---
-## 📸 Aperçu 
 
-![aperçu du site](style/apercu.png "Aperçu du site")
----
+## 📸 Aperçu
 
 ## 📁 Structure du projet
 
@@ -137,17 +135,17 @@ Remplacer dans `index.html` :
 
 ## 🗂️ Projets présents
 
-| #   | Projet                                    | Domaine                  |
-| --- | ----------------------------------------- | ------------------------ |
-| 1   | Projet Nexora — Site web                  | Gestion de projet        |
-| 2   | Dashboard Jeu Mobile                      | Power BI · Data Analyst  |
-| 3   | Football Hub                              | Full Stack Data          |
-| 4   | Outils de gestion admin                   | Excel · Process · Notion |
-| 5   | Assistant informatique (Kraft ONG)        | Support IT               |
-| 6   | Générateur de rapports PDF                | Python · Automatisation  |
-| 7   | Étude de faisabilité — Aide à la conduite | Analyse produit          |
-| 8   | Étude de marché Nespresso                 | Stratégie & Business     |
-| 9   | Portfolio web personnel                   | Développement Front-End  |
+| # | Projet                                        | Domaine                    |
+| - | --------------------------------------------- | -------------------------- |
+| 1 | Projet Nexora — Site web                     | Gestion de projet          |
+| 2 | Dashboard Jeu Mobile                          | Power BI · Data Analyst   |
+| 3 | Football Hub                                  | Full Stack Data            |
+| 4 | Outils de gestion admin                       | Excel · Process · Notion |
+| 5 | Assistant informatique (Kraft ONG)            | Support IT                 |
+| 6 | Générateur de rapports PDF                  | Python · Automatisation   |
+| 7 | Étude de faisabilité — Aide à la conduite | Analyse produit            |
+| 8 | Étude de marché Nespresso                   | Stratégie & Business      |
+| 9 | Portfolio web personnel                       | Développement Front-End   |
 
 ---
 
@@ -155,10 +153,10 @@ Remplacer dans `index.html` :
 
 | Technologie                              | Usage                             |
 | ---------------------------------------- | --------------------------------- |
-| HTML5 sémantique                         | Structure et accessibilité        |
-| CSS3 (variables, grid, animations)       | Mise en page et thème             |
+| HTML5 sémantique                        | Structure et accessibilité       |
+| CSS3 (variables, grid, animations)       | Mise en page et thème            |
 | JavaScript ES6+ vanilla                  | Animations, carrousel, formulaire |
-| Font Awesome 6                           | Icônes                            |
+| Font Awesome 6                           | Icônes                           |
 | Google Fonts (Playfair Display, DM Sans) | Typographie                       |
 
 ---
