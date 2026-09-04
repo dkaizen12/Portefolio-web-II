@@ -1076,7 +1076,12 @@
       overflow: hidden;
       box-shadow: var(--shadow);
     }
-
+    .about-img-box img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
     .about-badge {
       position: absolute;
       bottom: -12px; right: -12px;
